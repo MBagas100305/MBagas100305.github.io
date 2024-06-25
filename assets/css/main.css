@@ -1,45 +1,34 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Jun 14 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font:"Comic Sans MS", "Comic Sans", cursive;
+  --heading-font: "Playfair Display", serif;
+  --nav-font: "Baloo 2", cursive;
 }
+
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --contrast-color: #ffffff; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
+  --background-color: #1e1e2f; /* Dark, techy background */
+  --default-color: #e8e8e8; /* Light gray for main text */
+  --heading-color: #ffd700; /* Bright yellow for headings */
+  --accent-color: #00bfff; /* Vivid cyan for standout elements */
+  --contrast-color: #ffffff; /* White for contrast */
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Nav Menu Colors */
 :root {
-  --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #149ddd; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #f0e68c;  /* Khaki for default nav links */
+  --nav-hover-color: #ffd700; /* Bright yellow for hovered nav links */
+  --nav-dropdown-background-color: #282840; /* Dark background for dropdown items */
+  --nav-dropdown-color: #e8e8e8; /* Light gray for dropdown nav links */
+  --nav-dropdown-hover-color: #00bfff; /* Cyan for hovered dropdown links */
 }
 
 /* Template Custom Colors */
 :root {
-  --header-background-color: #040b14;
-  --header-color: #ffffff;
+  --header-background-color: #282840; /* Dark header background */
+  --header-color: #ffd700; /* Bright yellow header text */
 }
+
 
 /* Smooth scroll */
 :root {
@@ -145,17 +134,17 @@ h6 {
   background: var(--accent-color);
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 992px) {
+  .header {
+    left: -100%;
+  }
+}
+
+@media (min-width: 993px) {
 
   .header~main,
   .header~#footer {
     margin-left: 300px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .header {
-    left: -100%;
   }
 }
 
